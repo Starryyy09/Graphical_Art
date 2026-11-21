@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SVG Camera Art</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .box {
+      background: #262626;
+      padding: 12px;
+      border-radius: 8px;
+    }
+    p {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+    }
+    svg {
+      border: 3px solid white;
+      background: black;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Camera Graphical Art (200 x 300)</h2>
+
+  <div class="grid">
+
+    <!-- 1. Line and Circle -->
+    <div class="box">
+      <p>1. Line &amp; Circle</p>
+      <svg width="200" height="300">
+        <!-- Camera Box using Lines -->
+        <line x1="40" y1="115" x2="160" y2="115" stroke="white" stroke-width="3" />
+        <line x1="160" y1="115" x2="160" y2="185" stroke="white" stroke-width="3" />
+        <line x1="160" y1="185" x2="40" y2="185" stroke="white" stroke-width="3" />
+        <line x1="40" y1="185" x2="40" y2="115" stroke="white" stroke-width="3" />
+        <!-- Camera Lens -->
+        <circle cx="100" cy="150" r="24" fill="black" stroke="white" stroke-width="3" />
+        <circle cx="100" cy="150" r="12" fill="none" stroke="white" stroke-width="2" />
+        <circle cx="145" cy="128" r="4" fill="white" />
+        <!-- Foreground Zigzag Lines -->
+        <line x1="0" y1="40" x2="50" y2="15" stroke="white" stroke-width="10" />
+        <line x1="50" y1="15" x2="100" y2="40" stroke="white" stroke-width="10" />
+        <line x1="100" y1="40" x2="150" y2="15" stroke="white" stroke-width="10" />
+        <line x1="150" y1="15" x2="200" y2="40" stroke="white" stroke-width="10" />
+        <line x1="0" y1="260" x2="50" y2="285" stroke="white" stroke-width="10" />
+        <line x1="50" y1="285" x2="100" y2="260" stroke="white" stroke-width="10" />
+        <line x1="100" y1="260" x2="150" y2="285" stroke="white" stroke-width="10" />
+        <line x1="150" y1="285" x2="200" y2="260" stroke="white" stroke-width="10" />
+      </svg>
+    </div>
+
+    <!-- 2. Circle and Rectangle -->
+    <div class="box">
+      <p>2. Circle &amp; Rectangle</p>
+      <svg width="200" height="300">
+        <!-- Decorative Circles -->
+        <circle cx="50" cy="45" r="12" fill="white" />
+        <circle cx="100" cy="45" r="12" fill="white" />
+        <circle cx="150" cy="45" r="12" fill="white" />
+        <!-- Camera Body & Lens -->
+        <rect x="80" y="102" width="40" height="13" fill="none" stroke="white" stroke-width="3" />
+        <rect x="40" y="115" width="120" height="70" rx="6" fill="black" stroke="white" stroke-width="3" />
+        <circle cx="100" cy="150" r="24" fill="black" stroke="white" stroke-width="3" />
+        <circle cx="100" cy="150" r="12" fill="none" stroke="white" stroke-width="2" />
+        <circle cx="145" cy="128" r="4" fill="white" />
+        <!-- Bottom Circles -->
+        <circle cx="50" cy="255" r="12" fill="white" />
+        <circle cx="100" cy="255" r="12" fill="white" />
+        <circle cx="150" cy="255" r="12" fill="white" />
+      </svg>
+    </div>
+
+    <!-- 3. Polyline and Circle -->
+    <div class="box">
+      <p>3. Polyline &amp; Circle</p>
+      <svg width="200" height="300">
+        <!-- Camera Outline with Polyline -->
+        <polyline points="40,115 80,115 85,102 115,102 120,115 160,115 160,185 40,185 40,115"
+                  fill="black" stroke="white" stroke-width="3" />
+        <!-- Center Lens -->
+        <circle cx="100" cy="150" r="24" fill="black" stroke="white" stroke-width="3" />
+        <circle cx="100" cy="150" r="12" fill="none" stroke="white" stroke-width="2" />
+        <circle cx="145" cy="128" r="4" fill="white" />
+        <!-- Foreground Chevron Polylines -->
+        <polyline points="0,35 50,10 100,35 150,10 200,35" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,65 50,40 100,65 150,40 200,65" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,245 50,220 100,245 150,220 200,245" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,275 50,250 100,275 150,250 200,275" fill="none" stroke="white" stroke-width="12" />
+      </svg>
+    </div>
+
+    <!-- 4. Polygon and Ellipse -->
+    <div class="box">
+      <p>4. Polygon &amp; Ellipse</p>
+      <svg width="200" height="300">
+        <!-- Top & Bottom Chevron Polygons -->
+        <polygon points="0,35 50,10 100,35 150,10 200,35 200,50 150,25 100,50 50,25 0,50" fill="white" />
+        <!-- Camera Body & Prism (Polygon) -->
+        <polygon points="40,115 80,115 85,102 115,102 120,115 160,115 160,185 40,185"
+                 fill="black" stroke="white" stroke-width="3" />
+        <!-- Center Lens (Ellipse) -->
+        <ellipse cx="100" cy="150" rx="25" ry="23" fill="black" stroke="white" stroke-width="3" />
+        <ellipse cx="100" cy="150" rx="13" ry="11" fill="none" stroke="white" stroke-width="2" />
+        <ellipse cx="145" cy="128" rx="5" ry="3.5" fill="white" />
+        <!-- Bottom Polygon -->
+        <polygon points="0,255 50,230 100,255 150,230 200,255 200,270 150,245 100,270 50,245 0,270" fill="white" />
+      </svg>
+    </div>
+
+    <!-- 5. Circle, Line and Rectangle -->
+    <div class="box">
+      <p>5. Circle, Line &amp; Rectangle</p>
+      <svg width="200" height="300">
+        <!-- Zigzag Lines -->
+        <line x1="0" y1="35" x2="50" y2="10" stroke="white" stroke-width="10" />
+        <line x1="50" y1="10" x2="100" y2="35" stroke="white" stroke-width="10" />
+        <line x1="100" y1="35" x2="150" y2="10" stroke="white" stroke-width="10" />
+        <line x1="150" y1="10" x2="200" y2="35" stroke="white" stroke-width="10" />
+        <!-- Centered Camera (Rectangle + Circle) -->
+        <rect x="82" y="102" width="36" height="13" fill="none" stroke="white" stroke-width="3" />
+        <rect x="40" y="115" width="120" height="70" rx="6" fill="black" stroke="white" stroke-width="3" />
+        <circle cx="100" cy="150" r="24" fill="black" stroke="white" stroke-width="3" />
+        <circle cx="100" cy="150" r="12" fill="none" stroke="white" stroke-width="2" />
+        <circle cx="145" cy="128" r="4" fill="white" />
+        <!-- Bottom Zigzag Lines -->
+        <line x1="0" y1="265" x2="50" y2="290" stroke="white" stroke-width="10" />
+        <line x1="50" y1="290" x2="100" y2="265" stroke="white" stroke-width="10" />
+        <line x1="100" y1="265" x2="150" y2="290" stroke="white" stroke-width="10" />
+        <line x1="150" y1="290" x2="200" y2="265" stroke="white" stroke-width="10" />
+      </svg>
+    </div>
+
+    <!-- 6. Polyline and Polygon -->
+    <div class="box">
+      <p>6. Polyline &amp; Polygon</p>
+      <svg width="200" height="300">
+        <!-- Camera Body & Octagon Lens (Polygons) -->
+        <polygon points="40,115 80,115 85,102 115,102 120,115 160,115 160,185 40,185"
+                 fill="black" stroke="white" stroke-width="3" />
+        <polygon points="100,126 117,133 124,150 117,167 100,174 83,167 76,150 83,133"
+                 fill="black" stroke="white" stroke-width="3" />
+        <polygon points="141,125 149,125 149,131 141,131" fill="white" />
+        <!-- Foreground Chevron Polylines -->
+        <polyline points="0,35 50,10 100,35 150,10 200,35" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,65 50,40 100,65 150,40 200,65" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,245 50,220 100,245 150,220 200,245" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,275 50,250 100,275 150,250 200,275" fill="none" stroke="white" stroke-width="12" />
+      </svg>
+    </div>
+
+    <!-- 7. Circle, Rectangle, Polyline, Polygon and Ellipse -->
+    <div class="box">
+      <p>7. All 5 Elements</p>
+      <svg width="200" height="300">
+        <!-- Top Dots (Circle) -->
+        <circle cx="50" cy="82" r="10" fill="white" />
+        <circle cx="100" cy="82" r="10" fill="white" />
+        <circle cx="150" cy="82" r="10" fill="white" />
+
+        <!-- Camera Viewfinder (Polygon) & Body (Rectangle) -->
+        <polygon points="80,115 86,102 114,102 120,115" fill="none" stroke="white" stroke-width="3" />
+        <rect x="40" y="115" width="120" height="70" rx="6" fill="black" stroke="white" stroke-width="3" />
+
+        <!-- Flash (Ellipse) & Center Lens (Circle) -->
+        <ellipse cx="145" cy="128" rx="5" ry="3.5" fill="white" />
+        <circle cx="100" cy="150" r="24" fill="black" stroke="white" stroke-width="3" />
+        <circle cx="100" cy="150" r="12" fill="none" stroke="white" stroke-width="2" />
+
+        <!-- Bottom Dots (Circle) -->
+        <circle cx="50" cy="218" r="10" fill="white" />
+        <circle cx="100" cy="218" r="10" fill="white" />
+        <circle cx="150" cy="218" r="10" fill="white" />
+
+        <!-- Foreground Chevron Polylines (like reference pattern) -->
+        <polyline points="0,30 50,5 100,30 150,5 200,30" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,60 50,35 100,60 150,35 200,60" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,250 50,225 100,250 150,225 200,250" fill="none" stroke="white" stroke-width="12" />
+        <polyline points="0,280 50,255 100,280 150,255 200,280" fill="none" stroke="white" stroke-width="12" />
+      </svg>
+    </div>
+
+  </div>
+
+</body>
+</html>
